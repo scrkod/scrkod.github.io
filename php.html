@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP сервера и использование языков программирования.</title>
+    <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <div class="u-center-block fixed-height-demo"> 
+                <div class="u-centered">
+                    <h1 class="c-heading u-super">PHP</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="o-container o-container--large u-centred">
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+        <div class="o-grid o-grid--no-gutter o-grid--demo">
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="18" height="17">
+                </a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="csharp.html">C#</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="java.html">Java</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="javascript.html">JS</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="perl.html">Perl</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="python.html">Python</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="ruby.html">Ruby</a>
+            </div>
+        </div>
+
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+    </div>
+
+    <my-sticky>
+        <button class="c-button" id="open">
+            <img src="img/main/accordion.png" alt="acc" width="50" height="40">
+        </button>
+    </my-sticky>
+
+    <div aria-hidden class="c-overlay c-overlay--dismissible"></div>
+    <aside class="o-drawer u-highest o-drawer--left o-drawer--visible" id="sidebar">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">Навигация</h2>
+        </header>
+        <div class="c-card__body">
+        <ul class="c-list">
+            <li class="c-list__item"><a href="#language">О языке.</a></li>
+            <li class="c-list__item"><a href="#history">История впопыхах.</a></li>
+            <li class="c-list__item"><a href="#advantages">Преимущества.</a></li>
+            <li class="c-list__item"><a href="#disadvantages">Недостатки</a></li>
+            <li class="c-list__item"><a href="#web">Веб-разработка и фреймворки.</a></li>
+        </div>
+        <footer class="c-card__footer">
+          <div class="c-input-group">
+            <button class="c-button c-button--block">
+                <a href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="50" height="40">
+                </a>
+            </button>
+            <button class="c-button c-button--block" id="close">
+                <img src="img/main/close.png" alt="closer" width="50" height="50">
+            </button>
+          </div>
+        </footer>
+      </div>
+    </aside>
+
+    <script src="sidebar.js"></script>
+
+    <section class="o-container o-container--large u-pillar-box-medium">
+        <section id="language">
+            <h2>О языке.</h2>
+            <p>PHP — интерпретируемый скриптовый язык программирования общего назначения. Название представляет собой рекурсивный акроним PHP: Hypertext Preprocessor 
+                (PHP: предварительный обработчик гипертекста), но изначально оно расшифровывалось как Personal Home Page Tools (Инструменты для создания персональных веб-страниц). 
+                Он является одним из самых популярных языков для серверной веб-разработки (около 80% сайтов сети интернет написано на нем).
+            </p>
+            <p>Широкое использование данного языка обуславливается его применимостью. PHP используется в системах управления контентом (CMS-системы, например: Bitrix, Joomla), 
+                также на нем запрограммированы различные конструкторы сайтов (Например: Wix, SquareSpace). Данный язык используется не только для мелких проектов, но также на нем 
+                написаны ВКонтакте, Wikipedia и многие другие. Главное применение языка разработки PHP заключается в создании серверных приложений, скриптов, утилит, но не подходит 
+                для создания настольных и мобильных приложений.
+            </p>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/php/php_logo.png" alt="PHP" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>История впопыхах.</h2>
+            <p>Первое воплощение PHP, которое в 1994 создал Расмус Лердорф, было простым набором CGI-скриптов на языке программирования Си. Изначально Расмус пользовался скриптами, 
+                чтобы отслеживать посещения своего веб-резюме, и назвал набор этих скриптов Personal Homepages Tools («Инструменты для персональных домашних страниц»), но чаще 
+                упоминалось название PHP Tools. Со временем требовалось всё больше улучшений функциональности. Расмус переписал PHP Tools и создал более крупную и богатую 
+                реализацию.
+            </p>
+            <p>Позже Расмум объединился с Энди Гутмансом и Зивом  Сураски, так появился PHP 3.0, который был первой версией, которая напоминала PHP, каким его знают сегодня. 
+                Этот совершенно новый язык выпустили под новым названием, без упоминания о персональном назначении, как в PHP/FI 2.0. Язык переименовали просто в PHP, а его 
+                значение превратилось в рекурсивный акроним — PHP: Hypertext Preprocessor. Сильной стороной PHP 3.0 была расширяемость ядра. Кроме того что PHP обеспечивал 
+                пользователей надёжной инфраструктурой из множества отдельных баз данных, протоколов и API-интерфейсов, расширяемость PHP 3.0 привлекла к языку много сторонних 
+                разработчиков, которые хотели добавить в него свои модули. Возможно, это и был главный ключ к успеху, но стоит добавить, что немаловажным шагом оказалась поддержка 
+                объектно-ориентированного синтаксиса и намного более мощного и последовательного синтаксиса самого языка.
+            </p>
+            <p>Позже, в 4-й версии переработают ядро (так появился Zend), добавят поддержку HTTP. В 5-й и 7-й версиях движок также обновят. PHP 8.0, т.е. самая последняя версия, 
+                    привнесет много новых функций и оптимизаций.
+            </p>
+
+            <div class="o-container o-container--medium">
+                <img class="o-image" src="img/php/php_devs.jpg" alt="Разработчики PHP">
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <div class="u-text--quiet">Слева-направо: Расмус Лердорф, Зив Сураски, Энди Гутманс.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Преимущества.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Легко освоить;</li>
+                        <li class="c-list__item">Часто выбирают в качестве первого языка;</li>
+                        <li class="c-list__item">Огромное количество готовых решений;</li>
+                        <li class="c-list__item">Широкое распространение: легко найти работу/заказ;</li>
+                        <li class="c-list__item">Последние версии (php 5.6, php 7.0) значительно улучшают синтаксис и возможности по сравнению с php 5.0;</li>
+                        <li class="c-list__item">очень важным преимуществом PHP является его «движок», который по своей сути является транслирующим интерпретатором, что позволяет 
+                            обрабатывать сценарии с довольно высокой скоростью.
+                        </li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="disadvantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Недостатки.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Невозможна разработка мобильных и настольных приложений.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="web">
+            <h2>Веб-разработка и фреймворки.</h2>
+
+            <h3>Laravel</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/php/laravel_logo.jpg" alt="Laravel" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://laravel.com/docs/11.x">https://laravel.com/docs/11.x</a></p>
+            <p>Laravel - один из самых популярных фреймворков PHP, используемых во всем мире для создания веб-приложений, от небольших до больших проектов. Laravel - выбор 
+                профессиональных разработчиков из-за его производительности, возможностей и масштабируемости. Laravel следует структуре MVC (Model View Controller), которая 
+                упрощает изучение и быстрое создание прототипов веб-приложений. Laravel упрощает разработку веб-приложений, предоставляя встроенные функции, такие как 
+                аутентификация, почта, маршрутизация, сеансы и этот список можно продолжать долго.
+            </p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Плюсы платформы заключаются в следующем:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">отличная защита от SQL-инъекций и XSS-атак;</li>
+                        <li class="c-list__item">встроенные механизмы кеширования;</li>
+                        <li class="c-list__item">надежная архитектура MVC;</li>
+                        <li class="c-list__item">удобная и безопасная работа с базами данных;</li>
+                        <li class="c-list__item">возможность использования встроенных механизмов аутентификации.</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Laravel настолько прост в настройке, что вы можете создать свою собственную структуру проекта, отвечающую требованиям вашего веб-приложения. Благодаря красивому и 
+                элегантному синтаксису Laravel вы можете писать понятный и выразительный код. Laravel был создан Тейлором Отвеллом еще в 2011 году, с тех пор он много развил эту 
+                структуру и сделал ее совместимой с новейшими веб-технологиями. Фреймворк Laravel обладает большой экосистемой, которая включает в себя такие функции, как 
+                мгновенное развертывание, маршрутизация, ORM, запрос к БД, маршрутизация, создание шаблонов и создание списка.
+            </p>
+            <p>Управление зависимостями - одна из лучших функций Laravel, понимание функциональности контейнера служб (IoC) является основной частью изучения современных 
+                веб-приложений. В Laravel IoC (Inversion of Control) или Service Container - это самый мощный инструмент для управления зависимостями классов. Внедрение 
+                зависимостей - это метод удаления жестко запрограммированных классов и их внедрения с помощью такого инструмента, как Composer.
+            </p>
+            <p>Laravel имеет по умолчанию шаблонизатор Blade, позволяющий использовать код PHP в представлениях, и упрощающий создание экранирующих последовательностей. 
+                По своей производительности Laravel проигрывает Yii2. Однако, существуют способы улучшения производительности, которые рекомендуется делать только 
+                разработчикам с опытом.</p>
+            <p>Помимо стандартного функционала любого современного web-фреймворка В Laravel есть контроллеры ресурсов, что помогает быстро и удобно формировать
+                 RESTfull сервисы.
+            </p>
+
+            <h3>Yii</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/php/yii_logo.png" alt="Yii" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://www.yiiframework.com/doc/guide/2.0/ru">https://www.yiiframework.com/doc/guide/2.0/ru</a></p>
+            <p>Yii — это высокоэффективный основанный на компонентной структуре PHP - фреймворк для разработки масштабных веб-приложений. Он позволяет максимально применить 
+                концепцию повторного использования кода и может существенно ускорить процесс веб-разработки. Название Yii означает простой, эффективный и расширяемый.
+            </p>
+            <p>Также фреймворк Yii2 имеет ряд преимуществ, которые заставляют PHP - программистов остановить свой выбор именно на нём.</p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Вот несколько очевидных преимуществ использования фреймворка, который:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">использует стандартные способы решения задач, что уменьшает или устраняет запутанность кода;</li>
+                        <li class="c-list__item">сокращает время, затрачиваемое на рутинные задачи, такие как проверка форм и безопасность;</li>
+                        <li class="c-list__item">облегчает командную работу с помощью соблюдения стандартов;</li>
+                        <li class="c-list__item">облегчает поддержку кода с использованием общей архитектуры и методов;</li>
+                        <li class="c-list__item">имеет активное сообщество разработчиков, которые поддерживают фреймворк, обобщенные задачи и новые возможности.</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Наравне с положительными особенностями данного фреймворка существует пара недостатков его использования.</p>
+            <p>Во - первых, весь код, который включает в себя фреймворк, создает нагрузку на сервер и это может стать реальной проблемой. К счастью, доступны варианты кэширование, которые позволяют снизить 
+                последствия перегрузки, и для корпоративных приложений, вы можете использовать нативный SQL, чтобы минимизировать время выполнения запроса. Поэтому проблема перегрузки сервера не должна остановить 
+                вас от использования данного фреймворка.
+            </p>
+            <p>Во - вторых, когда вы работаете с Yii2, то работаете с огромным количеством кода, который писали не вы, следовательно, придётся потратить некоторое время, чтобы понять, как данный код работает. 
+                Некоторые части кода могут быть довольно непонятны в зависимости от вашего уровня знаний и опыта, поэтому не следует ожидать, что вам будет сразу все понятно.
+            </p>
+            <p>Большим плюсом для русскоязычных разработчиков будет то, что для данного фреймворка значительная часть официальной документации имеется на русском языке.</p>
+            <p>Уникальной особенностью Yii2 является встроенный генератор кода Gii с графическим интерфейсом (не имеет аналогов в других фреймворках), с помощью которого можно быстро создать такие компоненты 
+                как модель, контроллер, модуль, CRUD (Create-Read-Update-Delete). Последний компонент — визуальный интерфейс для работы с базой данных. Помимо этого имеет множество встроенных решений для 
+                визуального интерфейса.
+            </p>
+            <p>Также Yii2 интегрирован с AJAX и Jquery, что отражается на сокращении времени и повышении качества кода при разработке пользовательских интерфейсов.</p>
+        </section>
+
+        <blaze-back-to-top>
+            <button class="c-button">Вам вверх?</button>
+        </blaze-back-to-top>
+
+    </section>
+    
+    <footer>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+            <div class="o-grid o-grid--demo">
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>Ссылка на автора:</p>
+                    <a href="https://github.com/scrkod">
+                        <img src="img/main/git.png" alt="git" width="50" height="50">
+                    </a>
+                </div>
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>&copy;2024 Ассоциация самых джунистых джунов.</p>
+                    <p>Автор без зазрения совести "подрезал" и "скроил" весь представленный контент.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

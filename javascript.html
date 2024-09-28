@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP сервера и использование языков программирования.</title>
+    <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <div class="u-center-block fixed-height-demo"> 
+                <div class="u-centered">
+                    <h1 class="c-heading u-super">JavaScript</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="o-container o-container--large u-centred">
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+        <div class="o-grid o-grid--no-gutter o-grid--demo">
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="php.html">PHP</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="csharp.html">C#</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="java.html">Java</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="18" height="17">
+                </a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="perl.html">Perl</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="python.html">Python</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="ruby.html">Ruby</a>
+            </div>
+        </div>
+
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+    </div>
+
+    <my-sticky>
+        <button class="c-button" id="open">
+            <img src="img/main/accordion.png" alt="acc" width="50" height="40">
+        </button>
+    </my-sticky>
+
+    <div aria-hidden class="c-overlay c-overlay--dismissible"></div>
+    <aside class="o-drawer u-highest o-drawer--left o-drawer--visible" id="sidebar">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">Навигация</h2>
+        </header>
+        <div class="c-card__body">
+        <ul class="c-list">
+            <li class="c-list__item"><a href="#language">О языке.</a></li>
+            <li class="c-list__item"><a href="#history">История впопыхах.</a></li>
+            <li class="c-list__item"><a href="#advantages">Преимущества.</a></li>
+            <li class="c-list__item"><a href="#disadvantages">Недостатки</a></li>
+            <li class="c-list__item"><a href="#web">Веб-разработка и фреймворки.</a></li>
+        </div>
+        <footer class="c-card__footer">
+          <div class="c-input-group">
+            <button class="c-button c-button--block">
+                <a href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="50" height="40">
+                </a>
+            </button>
+            <button class="c-button c-button--block" id="close">
+                <img src="img/main/close.png" alt="closer" width="50" height="50">
+            </button>
+          </div>
+        </footer>
+      </div>
+    </aside>
+
+    <script src="sidebar.js"></script>
+
+    <section class="o-container o-container--large u-pillar-box-medium">
+        <section id="language">
+            <h2>О языке.</h2>
+            <p>JavaScript – это весьма популярный, относительно простой, объектно-ориентированный язык программирования, позволяющий разработчикам взаимодействовать с 
+                функциональными возможностями, предоставляемыми веб-браузерами. Более конкретно, JavaScript – это язык сценариев, что означает: традиционно исходный код 
+                JavaScript интерпретируется во время выполнения, а не предварительно компилируется в байтовый код. Практически его основная цель – изменить поведение другого 
+                приложения, обычно написанного на другом языке программирования. В то время как JavaScript удачно назван языком сценариев, первая часть названия ошибочно 
+                относится к языку программирования Java. JavaScript не имеет функциональной связи с языком программирования Java. Java-часть JavaScript использовалась для 
+                того, чтобы вызвать интерес к новому языку сценариев, поскольку Java была и остается очень популярным языком программирования. Следовательно, язык 
+                программирования, который многие разработчики используют сегодня для создания веб-приложений и взаимодействия с ними, широко известен как JavaScript.
+            </p>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/javascript/js_logo.jpg" alt="JS" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>История впопыхах.</h2>
+            <p>JavaScript был создан Бренданом Эйком, который работал над разработкой языка, названного Mocha. В 1995 году язык был переименован в JavaScript и включен в 
+                Netscape Navigator 2.0. Вскоре после этого, Microsoft создала свою версию языка, названную JScript, и включила его в Internet Explorer.
+            </p>
+            <p>В 1997 году язык был стандартизирован ECMA International и получил имя ECMAScript. Первой версией стандарта была ECMAScript 1, которая включала основные элементы, 
+                такие как типы данных, операторы, циклы и функции.ECMAScript был обновлен несколько раз, и каждая версия вводила новые конструкции в язык. Новые версии 
+                стандарта включали в себя ECMAScript 2 (1998) - ECMAScript 11 (2020).
+            </p>
+            <p>ECMAScript 6, также известный как ECMAScript 2015, является одной из самых значительных версий языка и включает множество новых функций и конструкций, 
+                таких как стрелочные функции, классы, обещания, модули и многое другое.
+            </p>
+
+            <div class="o-container o-container--medium">
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/javascript/js_dev.jpg" alt="Разработчик JS" width="250" height="250">
+                        <div class="u-text--quiet">Брендан Эйк</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Преимущества.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Может быть выбран в качестве первого языка программирования для изучения;</li>
+                        <li class="c-list__item">Легко освоить;</li>
+                        <li class="c-list__item">Широко используется, на нем можно разрабатывать практически любые приложения под любые платформы.</li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="disadvantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Недостатки.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Не подходит для создания сверхсложного ПО: промышленного, банковского;</li>
+                        <li class="c-list__item">Чаще существуют более сложные, но и более надежные инструменты.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="web">
+            <h2>Веб-разработка и фреймворки.</h2>
+
+            <h3>Node.js</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/javascript/node_js_logo.jpg" alt="NodeJS" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://nodejs.org/docs/latest/api/">https://nodejs.org/docs/latest/api/</a></p>
+            <p>Node.js - чрезвычайно мощная основанная на JavaScript платформа, используемая для разработки приложений онлайн-чата, сайтов потокового видео, одностраничных 
+                приложений и многих других веб-приложений с интенсивным вводом-выводом и веб-приложений. Построенный на движке JavaScript V8 от Google Chrome, он используется 
+                как крупными, известными компаниями, так и новичками (например, Netflix, Paypal, NASA и Walmart).
+            </p>
+            <p>Node.js является открытым исходным кодом и полностью бесплатен, используется тысячами разработчиков по всему миру. Он приносит множество преимуществ, что делает 
+                его лучшим выбором, чем другие серверные платформы, такие как Java или PHP. Node.js - это кроссплатформенная среда выполнения JavaScript с открытым исходным 
+                кодом и библиотека для запуска веб-приложений вне браузера клиента. Райан Даль разработал его в 2009 году, а его последняя версия v13.8.0 была выпущена 30 
+                января. Node.js используется для создания серверных веб-приложений и идеально подходит для приложений, интенсивно использующих данные, поскольку он использует 
+                асинхронное событие.
+            </p>
+            <p>Node.js стал де-факто инструментом для разработки серверных и сетевых приложений.</p>
+            <p>Node.js действительно быстр, поскольку он построен на движке JavaScript Google Chrome V8, его библиотека чрезвычайно быстра для выполнения кода.</p>
+            <p>Node Package Manager (NPM): Node Package Manager имеет более 50 000 пакетов, поэтому любые функции, необходимые для приложения, можно легко импортировать из NPM.</p>
+            <p>Node.js использует асинхронное программирование: все API библиотеки Node.js являются асинхронными (то есть неблокирующими), поэтому сервер на основе Node.js не 
+                ожидает API возврата данных. Сервер вызывает API, и в случае, если данные не возвращаются, сервер переходит к следующему API, а модуль Events в Node.js помогает 
+                серверу получить ответ от предыдущего вызова API. Это также помогает со скоростью Node.js. Без буферизации. Node.js значительно сокращает время обработки при 
+                загрузке аудио и видео файлов. Приложения Node.js никогда не буферизуют данные и просто выводят их порциями. Однопоточный. Node.js использует однопотоковую 
+                модель с зацикливанием событий. В результате он может обслуживать гораздо большее количество запросов, чем традиционные серверы, такие как Apache HTTP Server. 
+                Высокая масштабируемость. Сервер Node.js отвечает неблокирующим образом, что делает его легко масштабируемым по сравнению с традиционными серверами, которые 
+                создают ограниченные потоки для обработки запросов. Эти причины более чем оправдывают популярность платформы Node.js и почему она используется большим 
+                количеством организаций и предприятий.
+            </p>
+
+
+            <h3>Express.js</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/javascript/express_js_logo.png" alt="ExpressJS" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://expressjs.com/">https://expressjs.com/</a></p>
+            <p>Express.js в первую очередь использует первичные принципы и подходы Node.js, расширяя функциональные возможности в значительной степени и создавая новые 
+                удобные функции. Данный фреймворк является минималистичным и очень надежным инструментом для создания одностраничных и многостраничных сайтов, а также 
+                интерфейсов прикладного уровня (API), в то же время он гарантирует максимальную возможную производительность.
+            </p>
+            <p>Архитектура этого фреймворка заключается в том,	что, попав в приложение запрос обрабатывается	цепочкой функций, называемых “middleware”, в каждую из которых 
+                передаётся объект входящего HTTP запроса, интерфейс создания ответа, функция, позволяющая передать запрос дальше по цепочке и тело ошибки если текущий элемент 
+                цепочки middleware является обработчиком ошибок. В любой момент своего выполнения каждый элемент цепочки может либо передать запрос дальше, либо вернуть 
+                ответ клиенту. Как можно заметить, Express не предоставляет “из	 коробки” многих вещей которые входят в более тяжеловесные фреймворки, например, механизм 
+                аутентификации или роутер, но они легко могут быть добавлены в виде новых элементов цепочки middleware. Таким образом, программист получает меньше помощи 
+                от фреймворка, но имеет значительно больше свободы в выборе библиотек и организации структуры проекта. Стоит отметить, что на данный момент в экосистеме 
+                Node.js, Express уже не является самым быстрым и уж тем более самым высоко-архитектурным конкурентом, но ни один другой конкурент не может похвастаться 
+                таким сочетанием скорости и популярности	среди разработчиков, что обеспечивает активную поддержку проекта и богатство модулей третьей стороны
+            </p>
+        </section>
+
+        <blaze-back-to-top>
+            <button class="c-button">Вам вверх?</button>
+        </blaze-back-to-top>
+
+    </section>
+    
+    <footer>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+            <div class="o-grid o-grid--demo">
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>Ссылка на автора:</p>
+                    <a href="https://github.com/scrkod">
+                        <img src="img/main/git.png" alt="git" width="50" height="50">
+                    </a>
+                </div>
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>&copy;2024 Ассоциация самых джунистых джунов.</p>
+                    <p>Автор без зазрения совести "подрезал" и "скроил" весь представленный контент.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

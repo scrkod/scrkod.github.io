@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP сервера и использование языков программирования.</title>
+    <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <div class="u-center-block fixed-height-demo"> 
+                <div class="u-centered">
+                    <h1 class="c-heading u-super">Java</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="o-container o-container--large u-centred">
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+        <div class="o-grid o-grid--no-gutter o-grid--demo">
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="php.html">PHP</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="csharp.html">C#</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="18" height="17">
+                </a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="javascript.html">JS</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="perl.html">Perl</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="python.html">Python</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="ruby.html">Ruby</a>
+            </div>
+        </div>
+
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+    </div>
+
+    <my-sticky>
+        <button class="c-button" id="open">
+            <img src="img/main/accordion.png" alt="acc" width="50" height="40">
+        </button>
+    </my-sticky>
+
+    <div aria-hidden class="c-overlay c-overlay--dismissible"></div>
+    <aside class="o-drawer u-highest o-drawer--left o-drawer--visible" id="sidebar">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">Навигация</h2>
+        </header>
+        <div class="c-card__body">
+        <ul class="c-list">
+            <li class="c-list__item"><a href="#language">О языке.</a></li>
+            <li class="c-list__item"><a href="#history">История впопыхах.</a></li>
+            <li class="c-list__item"><a href="#advantages">Преимущества.</a></li>
+            <li class="c-list__item"><a href="#disadvantages">Недостатки</a></li>
+            <li class="c-list__item"><a href="#web">Веб-разработка и фреймворки.</a></li>
+        </div>
+        <footer class="c-card__footer">
+          <div class="c-input-group">
+            <button class="c-button c-button--block">
+                <a href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="50" height="40">
+                </a>
+            </button>
+            <button class="c-button c-button--block" id="close">
+                <img src="img/main/close.png" alt="closer" width="50" height="50">
+            </button>
+          </div>
+        </footer>
+      </div>
+    </aside>
+
+    <script src="sidebar.js"></script>
+
+    <section class="o-container o-container--large u-pillar-box-medium">
+        <section id="language">
+            <h2>О языке.</h2>
+            <p>Java — строго типизированный объектно-ориентированный язык программирования общего назначения, разработанный компанией Sun Microsystems. Разработка ведётся 
+                сообществом, организованным через Java Community Process; язык и основные реализующие его технологии распространяются по лицензии GPL. Права на торговую марку 
+                принадлежат корпорации Oracle. Приложения Java обычно транслируются в специальный байт-код, поэтому они могут работать на любой компьютерной архитектуре, для 
+                которой существует реализация виртуальной Java-машины.
+            </p>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/java/java_logo.png" alt="Java" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>История впопыхах.</h2>
+            <p>История JAVA началась в 1991 году, когда Патрик Ноутон, Билл Джой и Джеймс Гослинг начали работу над собственным проектом. Основной целью проекта было создание 
+                аппаратно-программной платформы «компьютера для людей», максимально надежной и при этом простой в управлении. Проект получил название «Green». В ходе работ 
+                возникла потребность в универсальном и кроссплатформенном языке программирования. Так появился «Oak».
+            </p>
+            <p>Язык программирования JAVA в том виде, в котором мы его знаем, появился далеко не сразу. Несколько лет подряд разработчики пытались внедрить новую технологию в 
+                различные сферы, но везде потерпели неудачу. Первым продвижением с мертвой точки стало создание в 1994 году браузера «WebRunner», который был способен отображать 
+                интерактивные программы-апплеты, встроенные непосредственно в страницы.
+            </p>
+            <p>Новый браузер начинал становиться популярным, и в итоге в 1995 году «Oak» получил новое имя. Так родился язык программирования Java, таким, каким мы его знаем. 
+                Браузер переименовался в «HotJava», однако его существование уже подходило к концу. А вот JAVA начал победное шествие по миру: сначала, 23 мая 1995 года, он был 
+                официально представлен и интегрирован в поуплярнейшем браузере того времени, Netscape Navigator 2.0, в 1996 году его начал поддерживать известный сейчас каждому 
+                Microsoft Internet Explorer, тогда еще в версии 3.0.
+            </p>
+            <p>В 1997 году JAVA перетерпел ряд существенных обновлений, разделился на несколько отдельных платформ и начал приобретать все более и более широкую популярность, которая не угасла 
+                и по сей день.
+            </p>
+
+            <div class="o-container o-container--medium">
+                <img class="o-image" src="img/java/java_devs.png" alt="Разработчики Java">
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Преимущества.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Простой, понятный синтаксис;</li>
+                        <li class="c-list__item">Любое приложение, написанное на одной платформе, может быть легко перенесено на другую платформу;</li>
+                        <li class="c-list__item">Язык объектно-ориентированный: все считается «объектом», который обладает определенным состоянием, поведением, и все операции 
+                            выполняются с использованием этих объектов;
+                        </li>
+                        <li class="c-list__item">Весь код преобразуется в байт-код после компиляции, который не читается человеком. Java не использует явный указатель и не запускает 
+                            программы внутри, чтобы предотвратить любые действия из ненадежных источников. Это позволяет разрабатывать системы и приложения, защищенные от вирусов и 
+                            несанкционированного доступа.
+                        </li>
+                        <li class="c-list__item">Единственный язык для создания приложений под Android до 2018 года, также крайне популярен и сейчас;</li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="disadvantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Недостатки.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Высокий порог вхождения, новичку в программировании будет сложно разобраться;</li>
+                        <li class="c-list__item">Для исполнения программ на компьютере/сервере должна быть установлена «Виртуальная машина Java» (JVM).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="web">
+            <h2>Веб-разработка и фреймворки.</h2>
+
+            <h3>JSP</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/java/jsp.png" alt="JSP" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>JSP – ответ Java на популярные страницы Microsoft Active Server Pages (ASP), которые также предоставляют собой элегантный способ смешивать статическое и 
+                динамическое содержимое. Если главная страница написана в обычном HTML-формате, то для вставки фрагментов кода программирования Java предусмотрены специальные 
+                теги. Логика бизнес-программирования и презентация четко разделены. Это позволяет программистам сосредоточиться на бизнес-логике, а веб-дизайнерам – на 
+                презентации. JSP основан на сервлете. Фактически страница JSP внутренне переводится в сервлет Java. Значит, сервлет – это HTML внутри Java, а JSP – это Java 
+                внутри HTML. JSP делает создание и поддержку динамических HTML-страниц намного проще, чем сервлет. Также JSP более удобен, чем сервлет для работы с презентацией, 
+                но не более мощный. Однако, JSP должен дополнять сервлет, а не заменять его. В проекте Model-ViewControl (MVC) для контроллера используются сервлеты, что включает 
+                в себя сложную логику программирования. JSP используются для презентаций, которые имеет дело с представлением. Необходимая модель может быть реализована с 
+                использованием JavaBeans или Enterprise JavaBeans (EJB),взаимодействующих с базой данных.
+            </p>
+            <p>Хотя по современным меркам JSP может показаться устаревшей технологией, но страницы JSP относительно быстры и просты в создании, а также легко взаимодействуют с 
+                сервлетами Java.
+            </p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Таким образом, технология JSP обладает рядом преимуществ, которые делают ее удобной в использовании:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">разделение статического и динамического содержимого;</li>
+                        <li class="c-list__item">динамическое содержимое создается с помощью логики программирования и вставляется в статический шаблон. Это значительно упрощает 
+                            создание и обслуживание  веб-контента;
+                        </li>
+                        <li class="c-list__item">повторное использование компонентов и библиотек тегов: динамическое содержимое может быть предоставлено повторно используемыми 
+                            компонентами, такими как JavaBean, Enterprise JavaBean (EJB) и библиотеками тегов.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <h3>Spring</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/java/spring.png" alt="Spring" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://docs.spring.io/spring-framework/reference/index.html">https://docs.spring.io/spring-framework/reference/index.html</a></p>
+            <p>Spring Framework (или коротко Spring) — универсальный фреймворк с открытым исходным кодом для Java-платформы. Spring обеспечивает решения многих задач, с которыми 
+                сталкиваются Java-разработчики и организации, которые хотят создать информационную систему, основанную на платформе Java.
+            </p>
+            <p>В процессе создания такого рода приложений необходимо сначала работать с Mavenом, с целью подключения зависимостей. Сначала мы создаем Maven проект из архетипа 
+                maven-archetype-webapp.Этот архетип помогает нам создать проект с уже готовыми необходимыми папками. Прописываем зависимости в конфигурационном файле Pom.xml.Этими 
+                зависимостями будут: Spring Context, Spring Core, Spring Beans.Фреймворк Spring состоит из нескольких модулей, IOC Container, AOP, DAO, Context, ORM, WEB MVC.
+            </p>
+            <p>Долгое время для создания web-приложений программисты пользовались JavaBeans. Это такие классы в языке java, которые должны удовлетворять определённым условиям. 
+                Однако данные классы были сильно ограничены в работе с транзакциями, безопасностью и много поточностью. А перечисленные выше три пункта до сих пор являются одними 
+                из самых важных для больших приложений. И уже в июне 2003 года появилось решение этой проблемы, когда Род Джонсон опубликовал первую версию Spring. На сегодняшний 
+                день spring это самый популярный фреймворк для разработки web-приложений на таком языке программирования как java. Spring использует исключительно те модули, 
+                которые необходимы программисту, и игнорирует другие модули.
+            </p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Модули из которых состоит Spring:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">data access</li>
+                        <li class="c-list__item">web;</li>
+                        <li class="c-list__item">core;</li>
+                        <li class="c-list__item">и другие.</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Data access благодаря инструментам содержащимся в нём позволяет работать с базами данных. В случае web работать с сетью.</p>
+            <p>В этом фреймворке есть такие понятия как DI/IoC. Рассмотрим их подробнее. DI имеет два определения. Dependency Inversion (не допущение такой ситуации когда один 
+                класс на прямую завязан на другом) и Dependency Injection (например, это когда Spring создаёт объекты наших классов, а от нас требуется просто «попросить» об этом).
+            </p>
+            <p>IoC (Inversion of Control) переводится на русский как инверсия управления. В начале статьи уже говорилось о разнице библиотеки и фреймворка. Так вот в случае 
+                использования Spring программа сама вызывает в необходимый момент код, который в свою очередь написан пользователем. То есть, работой программы управляет уже 
+                не программист. Главные способы конфигурации Spring приложения: – используя xml файлы; – используя java-конфиги; – автоматическая конфигурация.
+            </p>
+
+        </section>
+
+        <blaze-back-to-top>
+            <button class="c-button">Вам вверх?</button>
+        </blaze-back-to-top>
+
+    </section>
+    
+    <footer>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+            <div class="o-grid o-grid--demo">
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>Ссылка на автора:</p>
+                    <a href="https://github.com/scrkod">
+                        <img src="img/main/git.png" alt="git" width="50" height="50">
+                    </a>
+                </div>
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>&copy;2024 Ассоциация самых джунистых джунов.</p>
+                    <p>Автор без зазрения совести "подрезал" и "скроил" весь представленный контент.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

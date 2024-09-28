@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP сервера и использование языков программирования.</title>
+    <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <div class="u-center-block fixed-height-demo"> 
+                <div class="u-centered">
+                    <h1 class="c-heading u-super">Ruby</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="o-container o-container--large u-centred">
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+        <div class="o-grid o-grid--no-gutter o-grid--demo">
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="php.html">PHP</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="csharp.html">C#</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="java.html">Java</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="javascript.html">JS</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="perl.html">Perl</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="python.html">Python</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="18" height="17">
+                </a>
+            </div>
+        </div>
+
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+    </div>
+
+    <my-sticky>
+        <button class="c-button" id="open">
+            <img src="img/main/accordion.png" alt="acc" width="50" height="40">
+        </button>
+    </my-sticky>
+
+    <div aria-hidden class="c-overlay c-overlay--dismissible"></div>
+    <aside class="o-drawer u-highest o-drawer--left o-drawer--visible" id="sidebar">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">Навигация</h2>
+        </header>
+        <div class="c-card__body">
+        <ul class="c-list">
+            <li class="c-list__item"><a href="#language">О языке.</a></li>
+            <li class="c-list__item"><a href="#history">История впопыхах.</a></li>
+            <li class="c-list__item"><a href="#advantages">Преимущества.</a></li>
+            <li class="c-list__item"><a href="#disadvantages">Недостатки</a></li>
+            <li class="c-list__item"><a href="#web">Веб-разработка и фреймворки.</a></li>
+        </div>
+        <footer class="c-card__footer">
+          <div class="c-input-group">
+            <button class="c-button c-button--block">
+                <a href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="50" height="40">
+                </a>
+            </button>
+            <button class="c-button c-button--block" id="close">
+                <img src="img/main/close.png" alt="closer" width="50" height="50">
+            </button>
+          </div>
+        </footer>
+      </div>
+    </aside>
+
+    <script src="sidebar.js"></script>
+
+    <section class="o-container o-container--large u-pillar-box-medium">
+        <section id="language">
+            <h2>О языке.</h2>
+            <p>Ruby – интерпретируемый язык программирования, поддерживающий много разных парадигм, в первую очередь объектную. Обладает автоматическим «сборщиком мусора» и 
+                строгой динамической типизацией, поддерживает многопоточность (*nix и независимая от ОС). Ruby, за счет своей мультипарадигмальности, используется в разных 
+                целях. На нем пишут биржевое ПО, программы для обеспечения безопасности и прочий коммерческий софт. Интерпретатор языка работает на любых платформах - от 
+                Windows и MacOS до Linux и Unix.
+            </p>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/ruby/ruby_logo.png" alt="Ruby" width="300" height="200">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>История впопыхах.</h2>
+            <p>Ruby был представлен публике японским программистом Юкихиро Матцумото (также известен как Matz) в 1995 году, и поначалу распространялся в основном среди 
+                японских разработчиков. В конце 90-х появилась первая официальная документация Ruby на английском языке, и так началась его всемирная популярность. 
+                Версия языка Ruby 1.8.0 вышла в 2005 году, а при релизе версии 1.9 Матцумото решил провести эксперимент и отошел от обратной совместимости с предыдущими 
+                итерациями. Такой шаг был необходим, чтобы исправить главный недостаток языка - низкую производительность. В итоге скорость обработки информации возросла 
+                в несколько раз, а с тем возрос и интерес к платформе. В 2018 году вышла еще более производительная версия Ruby 2.6, поддерживающая динамическую 
+                компиляцию данных.
+            </p>
+
+            <div class="o-container o-container--medium">
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/ruby/ruby_dev.jpg" alt="Разработчик Ruby" width="250" height="400">
+                        <div class="u-text--quiet">Юкихиро Матцумото</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Преимущества.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Объектом является абсолютно все;</li>
+                        <li class="c-list__item">Простой и последовательный синтаксис;</li>
+                        <li class="c-list__item">Отсутствие типизации переменных;</li>
+                        <li class="c-list__item">Поддержка ООП;</li>
+                        <li class="c-list__item">Мощная поддержка правил.</li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="disadvantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Недостатки.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Медлительность;</li>
+                        <li class="c-list__item">Интерпретируемость (сложно скрывать исходный код в коммерческом ПО);</li>
+                        <li class="c-list__item">Невозможность управлять некоторыми процессами, например выделением памяти;</li>
+                        <li class="c-list__item">Нельзя задать низкоуровневые структуры данных</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="web">
+            <h2>Веб-разработка и фреймворки.</h2>
+
+            <h3>Ruby on Rails</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/ruby/ror_logo.png" alt="RoR" width="300" height="200">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://guides.rubyonrails.org/">https://guides.rubyonrails.org/</a></p>
+
+            <p>Ruby on Rails (RoR), или просто Rails, — это фреймворк для создания веб-страниц и приложений, то есть готовая платформа, в которой есть инструменты, 
+                структура, модули и библиотеки для быстрой разработки.
+            </p>
+            <p>Ruby on Rails полноценный фулстек-фреймворк, его можно использовать как для разработки серверной части, так и для создания интерфейсов. Для серверных компонентов 
+                в нём есть модели, контроллеры и маршрутизация, а также инструменты для работы с базами данных и обработки запросов от клиентской части. Для интерфейсов в 
+                Rails есть представления и шаблоны. Например, одно из самых частых применений фреймворка — авторизация и аутентификация пользователя, когда нужно 
+                понять, пускать посетителя в закрытую часть сайта или нет.
+            </p>
+            <p>Основным преимуществом языка программирования Ruby и фреймворка Ruby on Rails является скорость разработки. На практике скорость разработки проектов на RoR выше на 
+                30-40 процентов по отношению к любому другому языку программирования или фреймворку. Такой прирост скорости разработки объясняется обширным набором готовых к 
+                работе штатных инструментов RoR, возможностью использовать готовые решения других разработчиков, ну и, конечно, удобством программирования на Ruby. Так же следует 
+                отметить, что Ruby on Rails обеспечивает лучшую безопасность проекта. При использовании инструментов RoR исключены SQL-инъекции и XSS-атаки, все входные параметры 
+                экранируется по умолчанию, выводимые переменные в шаблонах также экранируются. У разработчика просто нет шансов допустить ошибку безопасности (только если он не 
+                намеренно сам «выстрелил себе в ногу»).
+            </p>
+            <p>Rails применяет концепцию Model-View-Controller (MVC), что позволяет разделить логику приложения, пользовательский интерфейс и данные на отдельные компоненты. 
+                Это способствует улучшению организации кода и повышению производительности разработки. Rails также предоставляет богатый набор готовых решений и библиотек, 
+                что упрощает создание функциональных вебприложений. Благодаря своей простоте и прямолинейности, Rails позволяет разработчикам быстро создавать прототипы и 
+                масштабировать приложения.
+            </p>
+            <p>Ruby on Rails может работать с Apache, Lighttpd или любым другим веб-сервером, который поддерживает FastCGI. Для разработки и отладки часто используется 
+                веб-сервер WEBrick, встроенный в Ruby, или Mongrel. В качестве сервера базы данных поддерживаются MySQL, Firebird, PostgreSQL, DB2, Oracle и Microsoft 
+                SQL Server. Также поддерживается встраиваемая база данных SQLite.
+            </p>
+            <p>Для Windows существует дистрибутив Instant Rails в которой настроен и готов к использованию сразу после установки рабочей среды для разработки приложений 
+                Rails, который включает сервер Apache и СУБД MySQL. Для платформ Windows, Linux, Mac OS X существует комплексный установщик BitNami RubyStack, который 
+                включает все необходимое для разработки в среде Rails, включая Ruby, RubyGems, Ruby on Rails, MySQL, Apache, Mongrel и Subversion.
+            </p>
+        </section>
+
+        <blaze-back-to-top>
+            <button class="c-button">Вам вверх?</button>
+        </blaze-back-to-top>
+
+    </section>
+    
+    <footer>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+            <div class="o-grid o-grid--demo">
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>Ссылка на автора:</p>
+                    <a href="https://github.com/scrkod">
+                        <img src="img/main/git.png" alt="git" width="50" height="50">
+                    </a>
+                </div>
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>&copy;2024 Ассоциация самых джунистых джунов.</p>
+                    <p>Автор без зазрения совести "подрезал" и "скроил" весь представленный контент.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

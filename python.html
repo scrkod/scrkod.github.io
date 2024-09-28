@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP сервера и использование языков программирования.</title>
+    <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <div class="u-center-block fixed-height-demo"> 
+                <div class="u-centered">
+                    <h1 class="c-heading u-super">Python</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="o-container o-container--large u-centred">
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+        <div class="o-grid o-grid--no-gutter o-grid--demo">
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="php.html">PHP</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="csharp.html">C#</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="java.html">Java</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="javascript.html">JS</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="perl.html">Perl</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="18" height="17">
+                </a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="ruby.html">Ruby</a>
+            </div>
+        </div>
+
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+    </div>
+
+    <my-sticky>
+        <button class="c-button" id="open">
+            <img src="img/main/accordion.png" alt="acc" width="50" height="40">
+        </button>
+    </my-sticky>
+
+    <div aria-hidden class="c-overlay c-overlay--dismissible"></div>
+    <aside class="o-drawer u-highest o-drawer--left o-drawer--visible" id="sidebar">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">Навигация</h2>
+        </header>
+        <div class="c-card__body">
+        <ul class="c-list">
+            <li class="c-list__item"><a href="#language">О языке.</a></li>
+            <li class="c-list__item"><a href="#history">История впопыхах.</a></li>
+            <li class="c-list__item"><a href="#advantages">Преимущества.</a></li>
+            <li class="c-list__item"><a href="#disadvantages">Недостатки</a></li>
+            <li class="c-list__item"><a href="#web">Веб-разработка и фреймворки.</a></li>
+        </div>
+        <footer class="c-card__footer">
+          <div class="c-input-group">
+            <button class="c-button c-button--block">
+                <a href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="50" height="40">
+                </a>
+            </button>
+            <button class="c-button c-button--block" id="close">
+                <img src="img/main/close.png" alt="closer" width="50" height="50">
+            </button>
+          </div>
+        </footer>
+      </div>
+    </aside>
+
+    <script src="sidebar.js"></script>
+
+    <section class="o-container o-container--large u-pillar-box-medium">
+        <section id="language">
+            <h2>О языке.</h2>
+            <p>Python - это язык программирования, который позволяет работать довольно быстро и эффективно практически во всех направлениях. Он широко используется для 
+                обработки задач администрирования системы и веб-программирования. Особо известен благодаря своей простоте в использовании. Python — язык со строгой 
+                динамической типизацией, т.е. не имеет чёткого назначения.
+            </p>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/python/python_logo.png" alt="Python" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>История впопыхах.</h2>
+            <p>В феврале 1991 года сотрудник центра математики и информатики в Нидерландах, Гвидо ван Россум, опубликовал исходный код нового на тот
+                момент языка программирования — Python. Создание языка было его личной инициативой. Изначально у проекта не было официального бюджета и
+                все делалось только на энтузиазме. Поэтому Гвидо Ван Россум стремился экономить время и определил для себя несколько правил, одно из 
+                которых — это «заимствовать идеи отовсюду, откуда это имеет смысл». Так в Питон попали лучшие практики из множества языков, включая 
+                Lisp, Fortran, Java и так далее. Наибольшее же влияние на него оказали ABC и С.
+            </p>
+            <p>Спустя три года, в январе 1994 вышел Python 1.0, а еще через 6 лет в октябре 2000 Python 2.0. С каждой новой версией Питон обрастал новыми 
+                возможностями и функциями. В декабре 2008 года, после длительного тестирования вышла первая версия Python 3. В Python 3 были устранены 
+                многие недостатки архитектуры, однако авторам пришлось пожертвовать обратной совместимостью.
+            </p>
+
+            <div class="o-container o-container--medium">
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/python/python_dev.jpg" alt="Разработчик Python" width="300" height="400">
+                        <div class="u-text--quiet">Гвидо ван Россум</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Преимущества.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Легко освоить;</li>
+                        <li class="c-list__item">Удобный синтаксис;</li>
+                        <li class="c-list__item">Отличный инструмент для решения задач своей области применимости</li>
+                        <li class="c-list__item">Масса полезных фреймворков и библиотек.</li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="disadvantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Недостатки.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Низкая производительность;</li>
+                        <li class="c-list__item">Неявная типизация.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="web">
+            <h2>Веб-разработка и фреймворки.</h2>
+
+            <h3>Django</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/python/django_logo.jpg" alt="Django" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://docs.djangoproject.com/en/5.1/">https://docs.djangoproject.com/en/5.1/</a></p>
+            <p>Django — это программный каркас со многими возможностями, который позволит разрабатывать веб-сайт и веб-приложения на языке Python.</p>
+            <p>Фреймворк поддерживает один из главных принципов – DRY. Этот принцип разработки программного кода, который заключается в уменьшении повторений информации, 
+                формулировка принципа: «Каждая часть знания должна иметь единственное, непротиворечивое и авторитетное представление в рамках системы».
+            </p>
+            <p>Представленный фреймворк позволяет строить одно или несколько приложений, которые устанавливаются как отчуждаемые и подключаемые. Это возможность делает 
+                Django уникальным по сравнению, например, с Ruby on Rails. Также, отличием является, следующая возможность: явная конфигурация обработчиков URL.
+            </p>
+            <p>Django разрабатывался для работы под управлением Apache, а также с использованием PostgreSQL для работы с базой данных. Однако, на сегодняшний день Django 
+                работает не только с этой СУБД: MySQL (MariaDB), SQLite, Microsoft SQL Server, DB2, Firebird, SQL Anywhere и Oracle и т.д
+            </p>
+            <p>При использовании базы данных фреймворк использует собственный ORM, где описание модели данных осуществляется классами Python, что позволяет сгенерировать 
+                схему базы данных. Архитектура Django схожа с «Модель-Представление-Контроллер» (MVC). Контроллер классического представления MVC соответствует 
+                Представлению (view) в Django, а презентационная логика Представления реализуется на уровне Шаблонов(templates). Поэтому архитектуру Django называют 
+                «Модель-Шаблон-Представление» (MTV)
+            </p>
+            <p>Фреймворк имеет ряд средств, которые помогают в быстрой разработке веб-сайтов. Так, например, программисту нет необходимости разрабатывать контроллеры и страницы 
+                для администрирования сайта, Django имеет встроенное приложения для управления, которое позволит управлять несколькими сайтами на одном сервере. Такое приложение 
+                позволяет создавать, удалять, а также изменять любые объекты сайта, занося все действия в протокол и предоставляет интерфейс для управления пользователями и 
+                группами.
+            </p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Отличительные особенности Django:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">любой запрос обрабатывается программно и перенаправляется на свой адрес(url);</li>
+                        <li class="c-list__item">разделение контента и представления с помощью шаблонов;</li>
+                        <li class="c-list__item">абстрагирование от низкого уровня баз данных.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Flask</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/python/flask_logo.png" alt="Flask" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://flask.palletsprojects.com/en/3.0.x/">https://flask.palletsprojects.com/en/3.0.x/</a></p>
+            <p>Flask – это микро-фреймворк, написанный на Python. Он не требует каких-либо специальных библиотек или инструментов, а также не имеет уровня абстракции 
+                базы данных, встроенных сторонних библиотек и общих функций или методов проверки форм. Тем не менее, он предоставляет широкий спектр расширений, 
+                которые, если их использовать, работают как встроенный Flask. Потребность в расширениях возникает как часть объектно-реляционного отображения, обработки 
+                загрузки, проверки форм, технологий открытой аутентификации и многих общих инструментов, зависящих от инфраструктуры. Можно также ожидать очень быстрое и 
+                частое обновление расширений.
+            </p>
+            <p>Вместе с Flask программист получает шаблонизатор, которые позволяет использовать один и тот же пользовательский интерфейс на нескольких страницах.</p>
+            <p>В фреймворк интегрированы инструменты для тестирования и отладки. К основным недостаткам Flask относится то, что он не поддерживает асинхронность 
+                (обрабатывает все запросы в один поток, то есть каждый запрос блокирует поток на время своего выполнения, а затем передает очередь следующему запросу).
+            </p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Особенности Flask:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list c-list--ordered">
+                        <li class="c-list__item">Роутинг и обработка запросов: Flask предоставляет удобный способ определения URL-адресов и связывания их с функциями, 
+                            обрабатывающими запросы.
+                        </li>
+                        <li class="c-list__item">Шаблонизация: Flask использует библиотеку Jinja2 для генерации HTML-кода, что упрощает создание динамических веб-страниц.</li>
+                        <li class="c-list__item">Работа с формами: Flask позволяет легко обрабатывать отправленные пользователем данные через формы на веб-страницах.</li>
+                        <li class="c-list__item">Взаимодействие с базами данных: Flask не имеет своего встроенного инструмента для работы с базами данных, но с помощью сторонних 
+                            библиотек, таких как SQLAlchemy, разработчики могут легко интегрировать базы данных в свои приложения.
+                        </li>
+                        <li class="c-list__item">Аутентификация: Flask позволяет создавать системы аутентификации для веб-приложений. Flask-Login - это одно из расширений Flask, 
+                            предназначенных для работы с системами аутентификации.
+                        </li>
+                        <li class="c-list__item">Расширяемость: Flask позволяет использовать сторонние библиотеки и пакеты для создания приложений любой сложности.</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Flask является одним из самых популярных фреймворков для разработки веб-приложений на Python, благодаря своей гибкости, простоте и легковесности.</p>
+        </section>
+
+        <blaze-back-to-top>
+            <button class="c-button">Вам вверх?</button>
+        </blaze-back-to-top>
+
+    </section>
+    
+    <footer>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+            <div class="o-grid o-grid--demo">
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>Ссылка на автора:</p>
+                    <a href="https://github.com/scrkod">
+                        <img src="img/main/git.png" alt="git" width="50" height="50">
+                    </a>
+                </div>
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>&copy;2024 Ассоциация самых джунистых джунов.</p>
+                    <p>Автор без зазрения совести "подрезал" и "скроил" весь представленный контент.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

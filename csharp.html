@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP сервера и использование языков программирования.</title>
+    <link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <div class="u-center-block fixed-height-demo"> 
+                <div class="u-centered">
+                    <h1 class="c-heading u-super">C#</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="o-container o-container--large u-centred">
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+        <div class="o-grid o-grid--no-gutter o-grid--demo">
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="php.html">PHP</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="18" height="17">
+                </a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="java.html">Java</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="javascript.html">JS</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="perl.html">Perl</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="python.html">Python</a>
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-14">
+                <a class="c-button c-button--block" href="ruby.html">Ruby</a>
+            </div>
+        </div>
+
+        <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+    </div>
+
+    <my-sticky>
+        <button class="c-button" id="open">
+            <img src="img/main/accordion.png" alt="acc" width="50" height="40">
+        </button>
+    </my-sticky>
+
+    <div aria-hidden class="c-overlay c-overlay--dismissible"></div>
+    <aside class="o-drawer u-highest o-drawer--left o-drawer--visible" id="sidebar">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">Навигация</h2>
+        </header>
+        <div class="c-card__body">
+        <ul class="c-list">
+            <li class="c-list__item"><a href="#language">О языке.</a></li>
+            <li class="c-list__item"><a href="#history">История впопыхах.</a></li>
+            <li class="c-list__item"><a href="#advantages">Преимущества.</a></li>
+            <li class="c-list__item"><a href="#disadvantages">Недостатки</a></li>
+            <li class="c-list__item"><a href="#web">Веб-разработка и фреймворки.</a></li>
+        </div>
+        <footer class="c-card__footer">
+          <div class="c-input-group">
+            <button class="c-button c-button--block">
+                <a href="index.html">
+                    <img src="img/main/home.png" alt="homer" width="50" height="40">
+                </a>
+            </button>
+            <button class="c-button c-button--block" id="close">
+                <img src="img/main/close.png" alt="closer" width="50" height="50">
+            </button>
+          </div>
+        </footer>
+      </div>
+    </aside>
+
+    <script src="sidebar.js"></script>
+
+    <section class="o-container o-container--large u-pillar-box-medium">
+        <section id="language">
+            <h2>О языке.</h2>
+            <p>C# (CSharp) — объектно-ориентированный язык программирования. Относится к семье языков с C-подобным синтаксисом, из них его синтаксис наиболее близок к C++ и Java.
+                 C# – это многопарадигмальный язык программирования, который широко используется не только на платформе Windows, но и на платформе iOS/Android (благодаря Xamarian 
+                 и Swift) и даже на Linux.
+            </p>
+            <p>Язык был выпущен компанией Microsoft вместе с платформой ".NET". C# и .NET в некотором смысле являются "родственными душами": некоторые свойства языка специально 
+                разрабатывались, чтобы обеспечить комфортную работу в среде .NET, в то же время и некоторые свойства .NET специально закладывались для поддержки C#, хотя .NET 
+                нацелена на использование многих языков программирования. Компилятор с C# входит в стандартную установку самой .NET, поэтому программы на нём можно создавать и 
+                компилировать даже без инструментальных средств, вроде Visual Studio.
+            </p>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/csharp/c_logo.jpg" alt="C#" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history">
+            <h2>История впопыхах.</h2>
+            <p>Язык программирования С# был разработан в 1993—2001 годах группой инженеров компании Microsoft под руководством Андерса Хейлсберга и Скотта Вильтаумота как язык
+                 разработки приложений для платформы Microsoft .NET и впоследствии был стандартизирован как ECMA-334 и ISO/IEC 23270. Тестовая версия вышла в 2000 году, а 
+                 окончательная — в 2002-м. Вместе с ней появился Microsoft Visual Studio — новый удобный редактор кода. Нужно подметить, что язык C# развивается параллельно 
+                 платформе Microsoft .NET (и Mircosoft Visual Studio), поэтому зачастую правильно говорить, что определённой версии языка соответствует определённая версия 
+                 платформы .NET.
+            </p>
+            <div class="o-container o-container--large"></div>
+                <table class="c-table c-table--striped">
+                    <caption class="c-table__caption">Хронология развития C#, .NET и Visual Studio.</caption>
+                    <thead class="c-table__head">
+                    <tr class="c-table__row c-table__row--heading">
+                      <th class="c-table__cell">С#</th>
+                      <th class="c-table__cell">Дата</th>
+                      <th class="c-table__cell">.NET</th>
+                      <th class="c-table__cell">Visual Studio</th>
+                    </tr>
+                    </thead>
+                    <tbody class="c-table__body">
+                    <tr class="c-table__row">
+                      <td class="c-table__cell">1.0</td>
+                      <td class="c-table__cell">2002-01</td>
+                      <td class="c-table__cell">Framework 1.0</td>
+                      <td class="c-table__cell">2002</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">1.1, 1.2</td>
+                        <td class="c-table__cell">2003-04</td>
+                        <td class="c-table__cell">Framework 1.1</td>
+                        <td class="c-table__cell">2003</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">2.0</td>
+                        <td class="c-table__cell">2005-11</td>
+                        <td class="c-table__cell">Framework 2.0, 3.0</td>
+                        <td class="c-table__cell">2005, 2008</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">3.0</td>
+                        <td class="c-table__cell">2007-11</td>
+                        <td class="c-table__cell">Framework 3.5</td>
+                        <td class="c-table__cell">2008</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">4.0</td>
+                        <td class="c-table__cell">2010-04</td>
+                        <td class="c-table__cell">Framework 4</td>
+                        <td class="c-table__cell">2010</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">5.0</td>
+                        <td class="c-table__cell">2012-08</td>
+                        <td class="c-table__cell">Framework 4.5</td>
+                        <td class="c-table__cell">2012, 2013</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">6.0</td>
+                        <td class="c-table__cell">2015-07</td>
+                        <td class="c-table__cell">Framework 4.6, .NET Core 1.0, 1.1</td>
+                        <td class="c-table__cell">2015</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">7.0</td>
+                        <td class="c-table__cell">2017-03</td>
+                        <td class="c-table__cell">Framework 4.7</td>
+                        <td class="c-table__cell">2017, 15.0</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">7.1</td>
+                        <td class="c-table__cell">2017-08</td>
+                        <td class="c-table__cell">.NET Core 2.0</td>
+                        <td class="c-table__cell">2017, 15.3</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">7.2</td>
+                        <td class="c-table__cell">2017-11</td>
+                        <td class="c-table__cell"></td>
+                        <td class="c-table__cell">2017, 15.5</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">7.3</td>
+                        <td class="c-table__cell">2018-05</td>
+                        <td class="c-table__cell">.NET Core 2.1, 2.2, .NET Framework 4.8</td>
+                        <td class="c-table__cell">2019, 16.3</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">8.0</td>
+                        <td class="c-table__cell">2019-09</td>
+                        <td class="c-table__cell">.NET Core 3.0, 3.1</td>
+                        <td class="c-table__cell">2019, 16.8</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">9.0</td>
+                        <td class="c-table__cell">2020-11</td>
+                        <td class="c-table__cell">.NET 5.0</td>
+                        <td class="c-table__cell">2019, 16.8</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">10.0</td>
+                        <td class="c-table__cell">2021-11</td>
+                        <td class="c-table__cell">.NET 6.0, 6.1</td>
+                        <td class="c-table__cell">2022, 17.0</td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell">11.0</td>
+                        <td class="c-table__cell">2022-11</td>
+                        <td class="c-table__cell">.NET 7</td>
+                        <td class="c-table__cell">2022, 17.4</td>
+                    </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <p>Полную историю уместить не удалось, поэтому - вот ссылка, если интересует вопрос:</p>
+            <p><a href="https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history">
+                    https://learn.microsoft.com/ru-ru/dotnet/csharp/whats-new/csharp-version-history
+                </a>
+            </p>
+        </section>
+
+        <section id="advantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Преимущества.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Кроссплатформенность (спасибо среде Mono);</li>
+                        <li class="c-list__item">Классическое ООП;</li>
+                        <li class="c-list__item">Компоненто-ориентированный подход к программированию;</li>
+                        <li class="c-list__item">Поддержка событийно-ориентированного программирования;</li>
+                        <li class="c-list__item">Унифицированная система типизации;</li>
+                        <li class="c-list__item">Ориентация на безопасность кода.</li>
+                    </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="disadvantages">
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h2 class="c-heading">Недостатки.</h2>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">Сложный синтаксис</li>
+                        <li class="c-list__item">Невысокая производительность;</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="web">
+            <h2>Веб-разработка и фреймворки.</h2>
+
+            <h3>ASP.NET</h3>
+            <div class="o-container o-container--medium"></div>
+                <div class="u-center-block fixed-height-demo"> 
+                    <div class="u-centered">
+                        <img src="img/csharp/asp_net_mvc_logo.jpg" alt="ASP" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+            <p>Документация: <a href="https://learn.microsoft.com/ru-ru/aspnet/core/whats-new/?view=aspnetcore-8.0">
+                https://learn.microsoft.com/ru-ru/aspnet/core/whats-new/?view=aspnetcore-8.0
+                </a>
+            </p>
+            <p>ASP.NET – это часть технологии .NET, используемая для написания мощных клиент-серверных интернет приложений. Она позволяет создаватьдинамические страницы HTML. 
+                ASP.NET возникла в результате объединения более старой технологии ASP (активные серверные страницы) и .NET Framework. Она содержит множество готовых элементов 
+                управления, используя которые можно быстро создавать интерактивные образовательные веб-сайты.
+            </p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Обычно приложение ASP.NET можно разбить на набор компонентов:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ul class="c-list">
+                        <li class="c-list__item">веб-формы (страницы .aspx). Обеспечивают пользовательский интерфейс Web-приложения;</li>
+                        <li class="c-list__item">страницы code-behind - программный код для веб-форм;</li>
+                        <li class="c-list__item">файлы конфигурации. Для каждого веб-приложения предусмотрен файл Web.config, для всего веб-сервера - machine.config.</li>
+                    </ul>
+                </div>
+            </div>
+            <p>При создании нового проекта ASP.NET нам предлагается выбрать язык по умолчанию для создания страниц codebehind: Visual Basic, C# или J#. С точки зрения конечного 
+                результата разницы нет практически никакой, так как функциональные возможности любого языка практически идентичны и все они работают с единой библиотекой .NET 
+                Framework.
+            </p>
+            <div class="c-card">
+                <header class="c-card__header">
+                  <h3 class="c-heading">Работа по созданию приложения ASP.NET складывается из следующих шагов:</h3>
+                </header>
+                <div class="c-card__body">
+                    <ol class="c-list c-list--ordered">
+                        <li class="c-list__item">в режиме Дизайнера в графическом режиме создается содержимое страницы, на ней размещается текст, изображения, другие элементы 
+                            оформления (например, таблицы);
+                        </li>
+                        <li class="c-list__item">в режиме Дизайнера на страницу из ToolBox перетаскиваются элементы управления (текстовые поля, кнопки, ниспадающие 
+                            списки и т.п.);
+                        </li>
+                        <li class="c-list__item">на странице codebehind для событий самой страницы и элементов управления создается программный код;</li>
+                        <li class="c-list__item">при необходимости на вкладке Source дорабатывается код HTML для страницы.</li>
+                    </ol>
+                </div>
+            </div>
+            <p>Платформа ASP.NET позволяет более удобно управлять необходимыми модулями для веб-приложения, с помощью их загрузки через пакетный менеджер NuGet. 
+                Также при разработке веб-приложения нет строгой зависимости от библиотеки System.Web.dll. Платформа включает в себя фреймворк MVC, в котором реализуются 
+                функциональности MVC, Web Pages и Web API. В связи с этим исключается большая часть повторяющихся функциональностей, они соединены в одну модель – ASP.NET MVC.
+            </p>
+
+        </section>
+
+        <blaze-back-to-top>
+            <button class="c-button">Вам вверх?</button>
+        </blaze-back-to-top>
+
+    </section>
+    
+    <footer>
+        <div class="o-container o-container--large u-pillar-box-medium">
+            <blaze-divider>&loz;&loz;&loz;</blaze-divider>
+            <div class="o-grid o-grid--demo">
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>Ссылка на автора:</p>
+                    <a href="https://github.com/scrkod">
+                        <img src="img/main/git.png" alt="git" width="50" height="50">
+                    </a>
+                </div>
+                <div class="o-grid__cell o-grid__cell--width-50">
+                    <p>&copy;2024 Ассоциация самых джунистых джунов.</p>
+                    <p>Автор без зазрения совести "подрезал" и "скроил" весь представленный контент.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
